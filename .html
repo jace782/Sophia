@@ -42,8 +42,7 @@
   </div>
 
   <script>
-    // List of "I love you, Sophia Esposito" in many languages.
-    // Add more lines until you reach 400 if you want.
+    // Base phrase in different languages (sample set)
     const phrases = [
       "English: I love you, Sophia Esposito",
       "Spanish: Te amo, Sophia Esposito",
@@ -96,11 +95,10 @@
       "Kannada: ನಾನು ನಿನ್ನನ್ನು ಪ್ರೀತಿಸುತ್ತೇನೆ, ಸೋಫಿಯಾ ಎಸ್ಪೋಸಿಟೋ",
       "Gujarati: હું તને પ્રેમ કરું છું, સોફિયા એસ્પોઝિટો",
       "Marathi: मी तुझ्यावर प्रेम करतो, सोफिया एस्पोसिटो",
-      "Punjabi: ਮੈਂ ਤੈਨੂੰ ਪਿਆਰ ਕਰਦਾ ਹਾਂ, ਸੋਫੀਆ ਐਸਪੋਜ਼ੀਟੋ",
-      // ...duplicate or add more to reach 400
+      "Punjabi: ਮੈਂ ਤੈਨੂੰ ਪਿਆਰ ਕਰਦਾ ਹਾਂ, ਸੋਫੀਆ ਐਸਪੋਜ਼ੀਟੋ"
     ];
 
-    // If you want exactly 400, we can repeat the list:
+    // Build list up to 400 entries by repeating with numbering
     const total = 400;
     const list = [];
     for (let i = 0; i < total; i++) {
@@ -111,9 +109,8 @@
     const centerX = 600;
     const centerY = 600;
 
-    // Spiral parameters
-    const turns = 6; // how many rotations
-    const maxRadius = 500;
+    const turns = 6;      // number of rotations
+    const maxRadius = 500; // how far out the spiral goes
 
     list.forEach((text, index) => {
       const t = index / (list.length - 1); // 0 → 1
